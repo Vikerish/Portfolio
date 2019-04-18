@@ -20,3 +20,14 @@ anime({
     ],
 });
 
+anime({
+    targets: '.scrollingChange',
+    keyframes: [
+        
+        {color: '#ffffff', duration: 800, easing: 'easeInOutSine'},
+        {color: '#3a3a3a', duration: 100, easing: 'easeInOutSine'},
+        {color: '#ffffff', duration: 800, easing: 'easeInOutSine'}
+    ],
+    delay: anime.stagger(90),
+    loop: true,
+});
